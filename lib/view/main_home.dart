@@ -16,6 +16,9 @@ class _MainHomeState extends State<MainHome> {
       appBar: AppBar(
         title: const Text("Main Home Page"),
         backgroundColor: MyColors.btnColor,
+        leading: IconButton(onPressed: (){
+          Navigator.pop(context);
+        }, icon: const Icon(Icons.arrow_back_ios_new)),
       ),
       body: const SizedBox(
         width: double.infinity,
